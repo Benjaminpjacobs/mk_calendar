@@ -1,3 +1,11 @@
+<%= form_tag( '/calendar') do |f| %>
+  <%= label_tag :events %>
+  <%= text_field_tag :events %>
+  <%=submit_tag 'Add Events'%>
+<% end %>
+
 <% @events.each do |event| %>
-    <%=event%>
-        <%end%>
+  Event: <%=event.id%>
+  Start_time: <%=event.start_time%>
+  End_time: <%=event.end_time%>
+<%end%>
