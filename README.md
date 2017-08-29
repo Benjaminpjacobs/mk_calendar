@@ -22,8 +22,8 @@ There you will see the empty calendar. From you can either enter an array of JSO
 ```rake db:seed``` command to seed the database with events. All events are entered in 24hr time for this prototype. The format would look like:
 ```
 [
-{start_time: '09:00', end_time: '10:00'}, 
-{start_time: '10:00', end_time: '11:00'}
+{"start_time": "09:00", "end_time": "10:00"}, 
+{"start_time": "10:00", "end_time": "11:00"}
 ]
 ```
 
