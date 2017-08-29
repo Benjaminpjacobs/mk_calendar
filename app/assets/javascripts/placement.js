@@ -4,10 +4,9 @@ $(document).ready(function() {
             data.forEach(function(event) {
                 const id = event.id
                 const startTime = event.start_time
-                const length = (Number(event.end_time) - Number(startTime)) / 100
-
-                const th = `<th rowspan=${length}>Event ${id}</th>`
+                const length = event.length
                 debugger
+                const th = `<th rowspan=${length}>Event ${id}</th>`
                 $(`#${startTime}`).append(th)
             });
         })
