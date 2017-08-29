@@ -13,7 +13,7 @@ RSpec.describe "/" do
     
     expect(current_path).to eq(root_path)
     expect(page).to have_content('Event: 1')
-    expect(page).to have_content('Start_Time: 2:00am')
-    expect(page).to have_content('End_Time: 5:00am')
+    expect(page).to have_content('Start Time: 01/01/2000 02:00am')
+    expect(page).to have_content('End Time: 01/01/2000 05:00am')
   end
 end

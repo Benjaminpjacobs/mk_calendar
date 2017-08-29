@@ -6,6 +6,6 @@
 
 <% @events.each do |event| %>
   Event: <%=event.id%>
-  Start_time: <%=event.start_time%>
-  End_time: <%=event.end_time%>
+  Start Time: <%=event.start_time.time%>
+  End Time: <%=event.end_time.time%>
 <%end%>
