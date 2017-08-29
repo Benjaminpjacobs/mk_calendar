@@ -1,11 +1,100 @@
-<%= form_tag( '/calendar') do |f| %>
-  <%= label_tag :events %>
-  <%= text_field_tag :events %>
-  <%=submit_tag 'Add Events'%>
-<% end %>
+<%#= form_tag( '/calendar') do |f| %>
+  <%#= label_tag :events %>
+  <%#= text_field_tag :events %>
+  <%#=submit_tag 'Add Events'%>
+<%# end %>
 
-<% @events.each do |event| %>
-  Event: <%=event.id%>
-  Start Time: <%=event.start_time.time%>
-  End Time: <%=event.end_time.time%>
-<%end%>
+<div class='calendar-container'>
+  <div class='hour-markers'>
+    <div class='hr'>
+    <p><h4>9:00</h4>  <span class='meridian'>am</span></p>
+    </div>
+    <div class='half-hr'>
+      <h6>9:30</h6>
+    </div>
+    <div class='hr'>
+    <p><h4>10:00</h4>  <span class='meridian'>am</span></p>
+    </div>
+    <div class='half-hr'>
+      <h6>10:30</64>
+    </div>
+    <div class='hr'>
+    <p><h4>11:00</h4>  <span class='meridian'>am</span></p>
+    </div>
+    <div class='half-hr'>
+      <h6>11:30</64>
+    </div>
+    <div class='hr'>
+    <p><h4>12:00</h4>  <span class='meridian'>pm</span></p>
+    </div>
+    <div class='half-hr'>
+      <h6>12:30</64>
+    </div>
+    <div class='hr'>
+    <p><h4>1:00</h4>  <span class='meridian'>pm</span></p>
+    </div>
+    <div class='half-hr'>
+      <h6>1:30</h6>
+    </div>
+    <div class='hr'>
+    <p><h4>2:00</h4>  <span class='meridian'>pm</span></p>
+    </div>
+    <div class='half-hr'>
+      <h6>2:30</h6>
+    </div>
+    <div class='hr'>
+    <p><h4>3:00</h4>  <span class='meridian'>pm</span></p>
+    </div>
+    <div class='half-hr'>
+      <h6>3:30</h6>
+    </div>
+    <div class='hr'>
+    <p><h4>4:00</h4>  <span class='meridian'>pm</span></p>
+    </div>
+    <div class='half-hr'>
+      <h6>4:30</h6>
+    </div>
+    <div class='hr'>
+    <p><h4>5:00</h4>  <span class='meridian'>pm</span></p>
+    </div>
+    <div class='half-hr'>
+      <h6>5:30</h6>
+    </div>
+    <div class='hr'>
+    <p><h4>6:00</h4>  <span class='meridian'>pm</span></p>
+    </div>
+    <div class='half-hr'>
+      <h6>6:30</h6>
+    </div>
+    <div class='hr'>
+    <p><h4>7:00</h4>  <span class='meridian'>pm</span></p>
+    </div>
+    <div class='half-hr'>
+      <h6>7:30</h6>
+    </div>
+    <div class='hr'>
+    <p><h4>8:00</h4>  <span class='meridian'>pm</span></p>
+    </div>
+    <div class='half-hr'>
+      <h6>8:30</h6>
+    </div>
+    <div class='hr'>
+    <p><h4>9:00</h4>  <span class='meridian'>pm</span></p>
+    </div>
+    <div class='half-hr'>
+      <h6>9:30</h6>
+    </div>
+  </div>
+  <div class='calendar-main'>
+
+<%#@events.each do |event| %>
+  <%# <div>Event: <%=event.id%>
+  <%# Start Time: <%=event.start_time.time%>
+  <%# End Time: <%=event.end_time.time%>
+  <%#</div> %>
+<%#end%>
+  <div class='event-card'>
+    <h2>Event 1<h2>
+  </div>
+  </div>
+</div>

@@ -17,3 +17,5 @@ RSpec.describe "/" do
     expect(page).to have_content('End Time: 01/01/2000 05:00am')
   end
 end
+
+

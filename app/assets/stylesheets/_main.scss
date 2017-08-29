@@ -1,0 +1,50 @@
+h4 {
+    font-size: 18px;
+    font-weight: 800;
+    display: inline;
+}
+
+h6 {
+    font-size: 12px;
+    font-weight: 100;
+    padding-left: 50px;
+}
+
+.meridian {
+    display: inline;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.calendar-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+}
+
+.hour-markers {
+    width: 100px;
+    max-height: 1200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.hr,
+.half-hr {
+    width: 100px;
+    max-height: 50px;
+}
+
+.calendar-main {
+    width: 600px;
+    max-height: 1200px;
+    background-color: lightgray
+}
+
+.event-card {
+    background-color: white;
+    margin: 0px 10px;
+    padding: 2px 10px;
+    border-left: 3px solid darkblue;
+}
