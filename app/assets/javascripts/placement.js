@@ -7,7 +7,11 @@ $(document).ready(function() {
                 const length = event.length
                 debugger
                 const th = `<th rowspan=${length}>Event ${id}</th>`
-                $(`#${startTime}`).append(th)
+                if (startTime.substr(2, 3) === '30') {
+                    $(th).insertAfter(`#${startTime}`)
+                } else {
+                    $(`#${startTime}`).append(th)
+                }
             });
         })
 
