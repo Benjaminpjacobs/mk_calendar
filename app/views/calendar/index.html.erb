@@ -1,4 +1,4 @@
-<%= form_tag( '/calendar',remote: true ) do |f| %>
+<%= form_tag( '/calendar' ) do |f| %>
 <%= label_tag :events %>
 <%= text_field_tag :events,   'please enter an array of date objects' %>
 <%=submit_tag 'Add Events'%>
